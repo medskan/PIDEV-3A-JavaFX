@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="826.0" prefWidth="1534.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.BackController">
+    <stylesheets>
+        <URL value="@back.css" />
+    </stylesheets>
+   <children>
+      <Button layoutX="14.0" layoutY="136.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="37.0" />
+      <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="26.0" layoutY="154.0" size="15.0" text="" />
+      <VBox layoutX="28.0" layoutY="164.0" prefHeight="646.0" prefWidth="202.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#Gcat" prefHeight="35.0" prefWidth="202.0" text="Gestion des catégories">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gpro" prefHeight="35.0" prefWidth="202.0" text="Gestion des produits">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gord" prefHeight="35.0" prefWidth="202.0" text="Gestion des commandes">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gper" prefHeight="35.0" prefWidth="202.0" text="Gestion des personnels">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gabo" prefHeight="35.0" prefWidth="202.0" text="Gestion des abonnes ">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gab" prefHeight="35.0" prefWidth="202.0" text="Gestion des abonnements">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gequi" prefHeight="35.0" prefWidth="202.0" text="Gestion des equipements">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gfou" prefHeight="35.0" prefWidth="202.0" text="Gestion des fournisseurs">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gliv" prefHeight="35.0" prefWidth="202.0" text="Gestion des livraisons">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#GP" prefHeight="35.0" prefWidth="202.0" text="Gestion des permissions">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gsal" prefHeight="35.0" prefWidth="202.0" text="Gestion des salles">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Guser" prefHeight="35.0" prefWidth="202.0" text="Gestion users">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#Gmail" prefHeight="35.0" prefWidth="202.0" text="Mailing">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Pane fx:id="secpane" layoutX="234.0" prefHeight="810.0" prefWidth="1300.0" />
+  
+      <ImageView fx:id="logo" fitHeight="80.0" fitWidth="92.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

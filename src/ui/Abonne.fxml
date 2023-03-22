@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" fx:id="pagination" prefHeight="732.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AbonneController">
+   <children>
+      <ImageView fitHeight="717.0" fitWidth="1102.0" layoutX="1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/bobo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="97.0" text="CIN" />
+      <Label layoutX="36.0" layoutY="128.0" text="Abonnement" />
+      <Label layoutX="36.0" layoutY="163.0" text="Nom" />
+      <Label layoutX="36.0" layoutY="205.0" text="Prénom" />
+      <Label layoutX="36.0" layoutY="249.0" text="Age" />
+      <Label layoutX="36.0" layoutY="295.0" text="Sexe" />
+      <Label layoutX="35.0" layoutY="327.0" text="Email" />
+      <Label layoutX="35.0" layoutY="357.0" text="Adresse" />
+      <Label layoutX="36.0" layoutY="403.0" text="Image" />
+      <Label layoutX="35.0" layoutY="442.0" text="Mot De Passe" />
+      <Label layoutX="35.0" layoutY="485.0" text="Message" />
+      <Label layoutX="33.0" layoutY="524.0" text="Telephone" />
+      <TextField fx:id="cina" layoutX="106.0" layoutY="93.0" />
+      <TextField fx:id="abo" layoutX="137.0" layoutY="124.0" />
+      <TextField fx:id="noma" layoutX="108.0" layoutY="159.0" />
+      <TextField fx:id="prenoma" layoutX="106.0" layoutY="201.0" />
+      <TextField fx:id="agea" layoutX="106.0" layoutY="245.0" />
+      <TextField fx:id="sexea" layoutX="106.0" layoutY="291.0" />
+      <TextField fx:id="emaila" layoutX="106.0" layoutY="323.0" />
+      <TextField fx:id="adressea" layoutX="106.0" layoutY="362.0" />
+      <TextField fx:id="imga" layoutX="106.0" layoutY="399.0" />
+      <TextField fx:id="mdpa" layoutX="108.0" layoutY="438.0" />
+      <TextField fx:id="msga" layoutX="108.0" layoutY="481.0" />
+      <TextField fx:id="tela" layoutX="106.0" layoutY="520.0" />
+      <Button fx:id="ajouta" layoutX="29.0" layoutY="639.0" mnemonicParsing="false" onAction="#ajouter" text="Ajouter" />
+      <Button fx:id="modifa" layoutX="106.0" layoutY="639.0" mnemonicParsing="false" onAction="#modifier" text="Modifier" />
+      <Button fx:id="suppa" layoutX="183.0" layoutY="639.0" mnemonicParsing="false" onAction="#supprimer" text="Supprimer" />
+      <TextField fx:id="id" layoutX="818.0" layoutY="87.0" onKeyReleased="#search" />
+      <Pane layoutX="304.0" layoutY="179.0" prefHeight="391.0" prefWidth="771.0">
+         <children>
+            <TableView fx:id="tablea" layoutX="14.0" layoutY="23.0" onMouseClicked="#selected" prefHeight="314.0" prefWidth="754.0">
+               <columns>
+                  <TableColumn fx:id="CINA" prefWidth="75.0" text="CIN" />
+                  <TableColumn fx:id="ABOA" prefWidth="75.0" text="Abonnement" />
+                  <TableColumn fx:id="NOMA" prefWidth="75.0" text="Nom" />
+                  <TableColumn fx:id="PRENOMA" prefWidth="75.0" text="Prenom" />
+                  <TableColumn fx:id="AGEA" prefWidth="75.0" text="Age" />
+                  <TableColumn fx:id="SEXEA" prefWidth="75.0" text="Sexe" />
+                  <TableColumn fx:id="MAILA" prefWidth="75.0" text="Email" />
+                  <TableColumn fx:id="ADRESSEA" prefWidth="75.0" text="Adresse" />
+                  <TableColumn fx:id="IMGA" prefWidth="75.0" text="Image" />
+                  <TableColumn fx:id="MDPA" prefWidth="75.0" text="MDP" />
+                  <TableColumn fx:id="MSGA" prefWidth="75.0" text="Message" />
+                  <TableColumn fx:id="TELA" prefWidth="75.0" text="Tel" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Button layoutX="310.0" layoutY="639.0" mnemonicParsing="false" onAction="#load" text="Load" />
+   </children>
+</AnchorPane>

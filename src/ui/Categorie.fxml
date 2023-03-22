@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.CategorieController">
+    <stylesheets>
+        <URL value="@categorie.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="899.0" fitWidth="1076.0" layoutX="5.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/bobo.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0">
+         <children>
+            <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+            <TextField fx:id="nomC" layoutX="658.0" layoutY="178.0" promptText="Nom categorie" />
+            <TextField fx:id="typeC" layoutX="658.0" layoutY="248.0" promptText="Type" />
+            <Button layoutX="658.0" layoutY="343.0" mnemonicParsing="false" onAction="#AddC" prefHeight="27.0" prefWidth="126.0" text="       Ajouter" />
+            <Label layoutX="597.0" layoutY="160.0" text="Nom" />
+            <Label layoutX="598.0" layoutY="230.0" text="Type" />
+            <Button layoutX="74.0" layoutY="443.0" mnemonicParsing="false" onAction="#ShowC" prefHeight="27.0" prefWidth="41.0" text="     " />
+            <Button layoutX="658.0" layoutY="409.0" mnemonicParsing="false" onAction="#EditC" prefHeight="27.0" prefWidth="126.0" text="      Modifier" />
+            <Button layoutX="191.0" layoutY="443.0" mnemonicParsing="false" onAction="#DeleteC" prefHeight="27.0" prefWidth="135.0" text="       Supprimer" />
+            <Label layoutX="22.0" layoutY="90.0" text="Liste des catégories" />
+            <TableView fx:id="AfficherC" layoutX="18.0" layoutY="125.0" prefHeight="297.0" prefWidth="486.0">
+              <columns>
+                <TableColumn fx:id="Cid" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="Cnom" prefWidth="125.0" text="Nom" />
+                  <TableColumn fx:id="Ctype" prefWidth="125.0" text="Type" />
+              </columns>
+            </TableView>
+            <Button layoutX="371.0" layoutY="443.0" mnemonicParsing="false" onAction="#loadC" prefHeight="27.0" prefWidth="78.0" text="charger" />
+            <TextField fx:id="rech" layoutX="536.0" layoutY="49.0" />
+            <FontAwesomeIconView glyphName="REFRESH" layoutX="88.0" layoutY="461.0" size="15" />
+            <FontAwesomeIconView glyphName="REMOVE" layoutX="204.0" layoutY="461.0" size="15" />
+            <FontAwesomeIconView glyphName="PLUS" layoutX="668.0" layoutY="363.0" size="15" />
+            <FontAwesomeIconView glyphName="CHECK" layoutX="667.0" layoutY="427.0" size="15" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="740.0" layoutY="53.0" mnemonicParsing="false" onAction="#search" prefHeight="27.0" prefWidth="54.0" text="      " />
+      <FontAwesomeIconView glyphName="SEARCH" layoutX="760.0" layoutY="71.0" size="15" />
+   </children>
+</AnchorPane>

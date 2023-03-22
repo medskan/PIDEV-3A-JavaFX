@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="475.0" prefWidth="656.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.SignUpController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+         <children>
+            <ImageView fitHeight="478.0" fitWidth="802.0" layoutX="-54.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/bobo.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="username" layoutX="70.0" layoutY="96.0" />
+            <Text layoutX="70.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom d'utilisateur" />
+            <Button layoutX="70.0" layoutY="310.0" mnemonicParsing="false" onAction="#signUp" text="S'inscrire" />
+            <Button layoutX="184.0" layoutY="310.0" mnemonicParsing="false" onAction="#goToLogin" text="Connexion" />
+            <TextField fx:id="mdp" layoutX="70.0" layoutY="171.0" />
+            <Text layoutX="70.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe" />
+            <Text layoutX="70.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" />
+            <ComboBox fx:id="role" layoutX="70.0" layoutY="256.0" prefWidth="150.0" promptText="Admin" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
